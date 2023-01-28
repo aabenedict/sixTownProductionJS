@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+nav {
+    height: 10vh;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    .navIcon {
+        display: none;
+    }
+
+    .navBar {
+        @include flex (row, nowrap, space-between, center);
+
+        ul {
+            @include flex (row, nowrap, flex-start, space-between);
+        }
+    }
+
+    .navLink {
+        padding-right: 50px;
+    }
+
+    .logo {
+        width: 80px;
+        margin-right: 125px;
+    }
+
+    .contactButton {
+        display: inline-block;
+        position: relative;
+        background-color: $secondaryColour;
+        border: solid 3px $primaryColour;
+        border-radius: 4px;
+        padding: 4px 30px;
+        cursor: pointer;
+        transition: 0.1s;
+
+        &:hover, &:focus {
+            border: solid 3px $secondaryColour;
+            color: $secondaryColour;
+            background-color: transparent;
+        }
+    }
+}

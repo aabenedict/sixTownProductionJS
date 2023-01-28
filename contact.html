@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f21b5dfadd.js" crossorigin="anonymous"></script>
+    <title>6Town Productions | Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <!-- Nav HTML -->
+    <nav>
+        <div class="wrapper">
+            <button class="navIcon">
+                <i class="icon fa-solid fa-bars">
+                    <p class="sr-only">click here to open slide-out menu</p>
+                </i>
+            </button> <!-- .icon .navIcon ends -->
+            <div class="navBar">
+                <ul>
+                    <li><a href="./index.html" class="navLink">Home</a></li>
+                    <li><a href="./index.html#about" title="About Us" class="navLink">About</a></li>
+                    <li><a href="./index.html#music" title="Listen to the Music" class="navLink">Music</a></li>
+                    <!-- <li><a href="./shop.html" title="Visit Our Shop" class="navLink">Shop</a></li> -->
+                </ul>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="6 Town Productions logo">
+                </div>
+                <a href="./contact.html" title="Contact Us" class="contactButton">Contact</a>
+            </div> <!-- .navBar ends -->
+        </div> <!-- .wrapper ends -->
+    </nav>
+    <!-- Nav HTML ends -->
+
+    <!-- Header HTML -->
+    <header class="contactHeader">
+        <!-- Markup for Slide Out Nav -->
+        <div class="slideOutNav hide" id="slideOutNavElement">
+            <button class="navCloseIcon">
+                <i class="icon fa-solid fa-xmark">
+                    <p class="sr-only">click here to open slide-out menu</p>
+                </i>
+            </button> <!-- .icon .navCloseIcon ends -->
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="navLink">Home</a></li>
+                    <li><a href="./index.html#about" title="About Us" class="navLink">About</a></li>
+                    <li><a href="./index.html#music" title="Listen to the Music" class="navLink">Music</a></li>
+                    <li><a href="./contact.html" class="navLink">Contact</a></li>
+                    <!-- <li><a href="./shop.html" title="Visit Our Shop" class="navLink">Shop</a></li> -->
+                </ul>
+            </nav>
+        </div> <!-- .slideOutNav .hide ends -->
+    </header>
+    <!-- Header HTML ends -->
+
+    <!-- Main HTML -->
+    <main>
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <form action="https://formsubmit.co/anjalee.benedict@gmail.com" method="POST">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input id="name" type="text" placeholder="Your Name" class="text">
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input id="email" type="email" placeholder="Your Email" class="text">
+                    <label for="subject" class="sr-only">Subject</label>
+                    <input id="subject" type="text" placeholder="Subject" class="message">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10" class="message">Message</textarea>
+                    <div class="stackingOrder">
+                        <button class="button">Send Message</button>
+                    </div> <!-- .stackingOrder ends -->
+                </form>
+            </div> <!-- .wrapper ends -->
+        </section> <!-- .contact ends -->
+    </main>
+    <!-- Main HTML ends -->
+    
+    <!-- Footer HTML -->
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about">About</a></li>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="6 Town Productions logo">
+                </div>
+                <li><a href="">Shop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <p>Copyright © 2022</p>
+        </div>
+    </footer>
+    <!-- Footer HTML ends -->
+
+    <!-- Linked JS file -->
+    <script src="./scriptContact.js"></script>
+</body>
+</html>

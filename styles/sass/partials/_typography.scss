@@ -1,0 +1,131 @@
+@use "variables" as *;
+
+@font-face {
+    font-family: "alata";
+    src: url("../fonts/alata/alataRegular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "beVietnamPro";
+    src: url("../fonts/beVietnamPro/BeVietnamPro-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "beVietnamPro";
+    src: url("../fonts/beVietnamPro/BeVietnamPro-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "beVietnamPro";
+    src: url("../fonts/beVietnamPro/BeVietnamPro-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "beVietnamPro";
+    src: url("../fonts/beVietnamPro/BeVietnamPro-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "beVietnamPro";
+    src: url("../fonts/beVietnamPro/BeVietnamPro-Bold.ttf");
+    font-weight: 700;
+}
+
+
+html {
+    font-family: $mainFont;
+    /* 20px default font size */
+    font-size: 125%;
+    color: $fontColourDark;
+}
+
+h1 {
+    font-family: $accentFont;
+    font-size: clamp(2.5rem, 9vw, 5rem);
+    line-height: clamp(2.6rem, 9vw, 5rem);
+    color: $secondaryColour;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.60px;
+    text-transform: uppercase;
+    
+    span {
+        display: inline-block;
+        -webkit-text-fill-color: $secondaryColour;
+        -webkit-text-stroke: 0.60px;
+    }
+}
+
+h2 {
+    color: $secondaryColour;
+    font-size: clamp(1.8rem, 4vw, 2rem);
+    line-height: clamp(2rem, 4vw, 2.6rem);
+    letter-spacing: 6px;
+}
+
+p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    line-height: clamp(1.25rem, 5vw, 1.5rem);
+    letter-spacing: 1px;
+}
+
+footer p {
+    color: $tertiaryColour;
+    font-size: clamp(0.5rem, 3vw, 0.8rem);
+    text-align: center;
+}
+
+nav a {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    line-height: clamp(1.1rem, 3vw, 1.6rem);
+    font-weight: 300;
+    color: $fontColourLight;
+    letter-spacing: 0.85px;
+    text-align: center;
+    &:hover, &:focus {
+        color: $secondaryColour;
+    }
+}
+
+.slideOutNav {
+    a {
+        font-family: $mainFont;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: $secondaryColour;
+        &:hover, &:focus {
+            color: $tertiaryColour;
+        }
+    }
+}
+
+footer a {
+    color: $tertiaryColour;
+    &:hover, &:focus {
+        color: $secondaryColour;
+    }
+}
+
+.button {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    line-height: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: $secondaryColour;
+    text-transform: uppercase;
+}
+
+
+// textarea,
+// input,
+// button,
+// .button {
+//     font-family: $accentFont;
+//     font-weight: 600;
+//     font-size: 1.2rem;
+//     text-align: center;
+// }

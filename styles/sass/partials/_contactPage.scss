@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.contact {
+    background-color: $primaryColour;
+    padding: 0px;
+    margin: 100px 0px 80px;
+    h2 {
+        margin-left: 10px;
+    }
+    form {
+        margin-top: 30px;
+        @include flex (row, wrap);
+
+        .text {
+            background-color: lighten($color: $primaryColour, $amount: 85);
+            width: calc(50% - 20px);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            &:hover, &:focus {
+                border: 2px solid $secondaryColour;
+            }
+        }
+
+        .message {
+            background-color: lighten($color: $primaryColour, $amount: 85);
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            &:hover, &:focus {
+                border: 2px solid $secondaryColour;
+            }
+        }
+        
+        .button {
+            margin-left: 10px;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $fontColourDark;
+            opacity: 1;
+        }
+    }
+}

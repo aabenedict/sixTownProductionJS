@@ -1,0 +1,155 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.player {
+    height: 95vh;
+    margin: 100px 0;
+    @include flex(column, nowrap, center, center);
+}
+
+.border {
+    background-color: lighten($color: $primaryColour, $amount: 83%);
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba($color: $secondaryColour, $alpha: 0.3) 0px 15px 38px, rgba($color: $secondaryColour, $alpha: 0.22) 0px 8px 12px;
+}
+
+.details {
+    @include flex(column, nowrap, center, center);
+}
+
+.trackArt {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid $secondaryColour;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 5px 30px $secondaryColour;
+    -webkit-box-shadow: 0px 5px 30px $secondaryColour;
+    box-shadow: 0px 5px 30px $secondaryColour;
+    -moz-border-radius: 5%0;
+    -webkit-border-radius: 50%;
+}
+
+.nowPlaying {
+    font-size: 1rem;
+}
+
+.trackName {
+    font-size: 2.5rem;
+}
+
+.trackArtist {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.buttonsPlayer {
+    @include flex(row, nowrap, center, center);
+}
+
+.active {
+    color: black;
+}
+
+.repeatTrack,
+.randomTrack,
+.playPauseTrack,
+.prevTrack,
+.nextTrack {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.repeatTrack:hover,
+.randomTrack:hover,
+.playPauseTrack:hover,
+.prevTrack:hover,
+.nextTrack:hover {
+    opacity: 1.0;
+}
+
+.sliderContainer {
+    @include flex(row, nowrap, center, center);
+}
+
+.seekSlider,
+.volumeSlider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #83A9FF;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seekSlider::-webkit-slider-thumb,
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: $whiteColour;
+    border: 3px solid #3774FF;
+    cursor: grab;
+    border-radius: 100%;
+}
+
+.seekSlider:hover,
+.volumeSlider:hover {
+    opacity: 0.75;
+}
+
+.seekSlider {
+    width: 100%;
+}
+
+.volumeSlider {
+    width: 30%;
+}
+
+.currentTime,
+.totalDuration {
+    padding: 10px;
+}
+
+i.fa-volume-low,
+i.fa-volume-high {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+i.fa-message, i.fa-heart, .likeNumber {
+    padding-left: 10px;
+}
+
+i.fa-message, i.fa-heart {
+    &:hover, &:focus {
+        color: $secondaryColour;
+    }
+}
+
+i,
+i.fa-circle-play,
+i.fa-circle-pause,
+i.fa-forward-step,
+i.fa-backward-step {
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+i.fa-circle-play,
+i.fa-circle-pause {
+    font-size: 2.25rem;
+}
+
+
+.randomActive {
+    color: $secondaryColour;
+}

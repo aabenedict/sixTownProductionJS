@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f21b5dfadd.js" crossorigin="anonymous"></script>
+    <title>6Town Productions | Home</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- Nav HTML -->
+    <nav>
+        <div class="wrapper">
+            <button class="navIcon">
+                <i class="icon fa-solid fa-bars">
+                    <p class="sr-only">click here to open slide-out menu</p>
+                </i>
+            </button> <!-- .icon .navIcon ends -->
+            <div class="navBar">
+                <ul>
+                    <li><a href="#" class="navLink">Home</a></li>
+                    <li><a href="#about" title="About Us" class="navLink">About</a></li>
+                    <li><a href="#music" title="Listen to the Music" class="navLink">Music</a></li>
+                    <!-- <li><a href="./shop.html" title="Visit Our Shop" class="navLink">Shop</a></li> -->
+                </ul>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="6 Town Productions logo">
+                </div>
+                <a href="./contact.html" title="Contact Us" class="contactButton">Contact</a>
+            </div> <!-- .navBar ends -->
+        </div> <!-- .wrapper ends -->
+    </nav>
+    <!-- Nav HTML ends -->
+
+    <!-- Header HTML -->
+    <header>
+        <div class="hero">
+            <div class="wrapper">
+                <h1><span>6</span>Town <br> Productions</h1>
+                <div class="headingLinks">
+                    <a href="#about" title="About Us" class="button aboutButton">About</a>
+                    <a href="#music" title="Listen to the Music" class="button">View Music</a>
+                </div> <!-- .headingLinks ends -->
+            </div> <!-- .wrapper ends -->
+        </div> <!-- .hero ends -->a
+
+        <!-- Markup for Slide Out Nav -->
+        <div class="slideOutNav hide" id="slideOutNavElement">
+            <button class="navCloseIcon">
+                <i class="icon fa-solid fa-xmark">
+                    <p class="sr-only">click here to open slide-out menu</p>
+                </i>
+            </button> <!-- .icon .navCloseIcon ends -->
+            <nav>
+                <ul>
+                    <li><a href="#" class="navLink">Home</a></li>
+                    <li><a href="#about" title="About Us" class="navLink">About</a></li>
+                    <li><a href="#music" title="Listen to the Music" class="navLink">Music</a></li>
+                    <li><a href="./contact.html" class="navLink">Contact</a></li>
+                    <!-- <li><a href="./shop.html" title="Visit Our Shop" class="navLink">Shop</a></li> -->
+                </ul>
+            </nav>
+        </div> <!-- .slideOutNav .hide ends -->
+    </header>
+    <!-- Header HTML ends -->
+    
+    <!-- Main HTML -->
+    <main>
+        <section id="music" class="player">
+            <div class="border">
+                <ul class="details">
+                    <li class="nowPlaying">PLAYING x OF y</li>
+                    <li class="trackArt"></li>
+                    <li class="trackName">Track Name</li>
+                    <li class="trackArtist">Track Artist</li>
+                </ul>
+                <ul class="sliderContainer">
+                    <li class="currentTime">00:00</li>
+                    <li><input type="range" min="1" max="100" value="0" class="seekSlider" onchange="seekTo()"></li>
+                    <li class="totalDuration">00:00</li>
+                </ul>
+                <ul class="buttonsPlayer">
+                    <li class="randomTrack" onclick="randomTrack()">
+                        <i class="fa-solid fa-shuffle" title="random"></i>
+                    </li>
+                    <li class="prevTrack" onclick="prevTrack()">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </li>
+                    <li class="playPauseTrack" onclick="playPauseTrack()">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </li>
+                    <li class="nextTrack" onclick="nextTrack()">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </li>
+                    <li class="repeatTrack" onclick="repeatTrack()">
+                        <i class="fa-solid fa-repeat" title="repeat"></i>
+                    </li>
+                </ul>
+                <ul class="sliderContainer">
+                    <li><i class="fa-solid fa-volume-low"></i></li>
+                    <li><input type="range" min="1" max="100" value="99" class="volumeSlider" onchange="setVolumeTo()"></li>
+                    <li><i class="fa-solid fa-message" onclick="createComment()"></i></li>
+                    <li><i class="fa-solid fa-heart" onclick="addLike()"></i></li>
+                    <li><p class="likeNumber">0</p></li>
+                </ul>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="wrapper aboutFlex">
+                <div class="aboutText">
+                    <h2>About 6Town</h2>
+                    <p>6Town is a rising music producer based in Toronto. With a strong passion for music production,
+                    6Town has been working diligently to develop and hone their skills. With a background in classical music, a love for indie and alternative pop, and experience producing rap beats, they want to combine all these different genres to craft a unique sound. Their style is characterized by its
+                    melodic elements and hard-hitting beats, which creates a one-of-a-kind listening experience. 6Town is excited to work with upcoming artists and help them bring their music visions to
+                    life. If you're an artist looking for a fresh and innovative producer to collaborate with, look no further than
+                    6Town. Contact them today to discuss your next project!</p>
+                </div>
+                <div class="aboutPic">
+                    <img src="./assets/techivation-unsplash.jpg" alt="person sitting at a desk producing music">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main HTML ends -->
+    
+    <!-- Footer HTML -->
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about">About</a></li>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="6 Town Productions logo">
+                </div>
+                <li><a href="">Shop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <p>Copyright © 2022</p>
+        </div>
+    </footer>
+    <!-- Footer HTML ends -->
+    
+    <!-- Linked JS file -->
+    <script src="./script.js"></script>
+</body>
+</html>

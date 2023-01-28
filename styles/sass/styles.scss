@@ -1,0 +1,12 @@
+@use "partials/setup";
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+@use "partials/typography";
+@use "partials/baseStyles";
+@use "partials/nav";
+@use "partials/header";
+@use "partials/music";
+@use "partials/about";
+@use "partials/footer";
+@use "partials/contactPage";
+@use "partials/mediaQueries";

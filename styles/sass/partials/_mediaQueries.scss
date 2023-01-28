@@ -1,0 +1,125 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Media Queries:
+
+/* all of our styles for LAPTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+    .aboutText {
+            margin-right: 70px;
+            width: calc(60% - 40px);
+        }
+    
+    .aboutPic {
+        width: calc(40% - 40px);
+        -webkit-box-shadow: 25px -18px 0px 5px $secondaryColour;
+        box-shadow: 25px -18px 0px 5px $secondaryColour;
+    }
+}
+
+/* all of our styles for TABLET LANDSCAPE devices will go within this breakpoint */
+@media (max-width: 1000px) {
+    .aboutFlex {
+        margin-top: 50px;
+        @include flex(column, nowrap, center, center)
+    }
+    .aboutText {
+        margin: 10px 30px 60px;
+        width: calc(100%);
+    }
+    .aboutPic {
+        width: calc(50%);
+        -webkit-box-shadow: 0px 0px 3px 12px $secondaryColour;
+        box-shadow: 0px 0px 3px 12px $secondaryColour;
+    }
+}
+
+/* all of our styles for TABLET PORTRAIT devices will go within this breakpoint */
+@media (max-width: 765px) {
+    .button {
+        margin: 20px 0px 20px 35px;
+    }
+    nav {
+        .navIcon {
+            display: block;
+        }
+
+        .navBar {
+            display: none;
+        }
+    }
+    header {
+        height: 70vh;
+        h1 {
+            margin-top: 0;
+        }
+        margin-bottom: 200px;
+    }
+    .aboutPic {
+        width: calc(80%);
+        -webkit-box-shadow: 0px 0px 3px 12px $secondaryColour;
+        box-shadow: 0px 0px 3px 12px $secondaryColour;
+    }
+    .contact {
+        margin: 40px 0px 60px;
+    }
+}
+
+/* all of our styles for MOBILE LANDSCAPE devices will go within this breakpoint */
+@media (max-width: 560px) {
+
+    .border {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+    .details {
+        li {
+            font-size: clamp(0.75rem, 6vw, 1.5rem);
+        }
+    }
+    .sliderContainer {
+        li {
+            font-size: clamp(0.25rem, 4vw, 1rem);
+        }
+    }
+    .buttonsPlayer {
+        i {
+            font-size: clamp(1.5rem, 6vw, 2rem);
+        }
+        li {
+            padding: 15px;
+        }
+    }
+    .about {
+        margin-bottom: 10px;
+    }
+    .aboutPic {
+        width: calc(90%);
+    }
+    footer {
+        ul {
+            @include flex(column, nowrap, space-between, center);
+        }
+        .logo {
+            order: -1;
+        }
+        li {
+            padding-top: 10px;
+        }
+    }
+}
+
+/* all of our styles for MOBILE LANDSCAPE devices will go within this breakpoint */
+@media (max-width: 450px) {
+    h1 {
+        font-size: clamp(1.5rem, 11vw, 2.5rem);
+        line-height: clamp(1.6rem, 11vw, 2.6rem);
+    }
+    .button {
+        font-size: clamp(0.6rem, 4vw, 0.8rem);
+        padding: 2px 10px;
+    }
+}
