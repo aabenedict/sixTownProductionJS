@@ -30,31 +30,31 @@ let updateTimer;
 
 const music_list = [
     {
-        img: 'assets/cover-circle.png',
+        img: 'assets/cover-1.jpg',
         name: 'Summer Nights',
         artist: 'SKVNT',
         music: 'music/eMastered_Summer-Nights.mp3'
     },
     {
-        img: 'assets/cover-circle.png',
+        img: 'assets/cover-1.jpg',
         name: 'West Side',
         artist: 'SKVNT',
         music: 'music/eMastered_West-Side.mp3'
     },
     {
-        img: 'assets/cover-circle.png',
+        img: 'assets/cover-1.jpg',
         name: 'Dangerous',
         artist: 'SKVNT',
         music: 'music/eMastered_Dangerous.mp3'
     },
     {
-        img: 'assets/cover-circle.png',
+        img: 'assets/cover-1.jpg',
         name: 'In The Mood',
         artist: 'SKVNT',
         music: 'music/eMastered_In-The-Mood.mp3'
     },
     {
-        img: 'assets/cover-circle.png',
+        img: 'assets/cover-1.jpg',
         name: 'Tanmay Chalamet',
         artist: 'SKVNT',
         music: 'music/eMastered_Tanmay-Chalamet.mp3'
