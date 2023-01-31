@@ -562,7 +562,7 @@ header .aboutButton:hover, header .aboutButton:focus {
 }
 
 .player {
-  height: 95vh;
+  height: 55vh;
   margin: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,9 +585,31 @@ header .aboutButton:hover, header .aboutButton:focus {
   background-color: #ded1ff;
   border: 1px solid transparent;
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   -webkit-box-shadow: rgba(229, 111, 111, 0.3) 0px 15px 38px, rgba(229, 111, 111, 0.22) 0px 8px 12px;
           box-shadow: rgba(229, 111, 111, 0.3) 0px 15px 38px, rgba(229, 111, 111, 0.22) 0px 8px 12px;
+}
+
+.divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section1, .section2 {
+  margin: 0 20px;
 }
 
 .details {
@@ -628,6 +650,7 @@ header .aboutButton:hover, header .aboutButton:focus {
 
 .trackName {
   font-size: 2.5rem;
+  padding-bottom: 20px;
 }
 
 .trackArtist {
@@ -729,12 +752,17 @@ header .aboutButton:hover, header .aboutButton:focus {
   width: 100%;
 }
 
+.seekSliderBox {
+  padding-bottom: 8px;
+}
+
 .volumeSlider {
   width: 100%;
 }
 
 .volumeSliderBox {
   width: 30%;
+  padding-bottom: 10px;
 }
 
 .currentTime,
@@ -955,6 +983,33 @@ footer p {
 }
 /* all of our styles for TABLET LANDSCAPE devices will go within this breakpoint */
 @media (max-width: 1000px) {
+  .player {
+    height: 95vh;
+  }
+  .divide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section1,
+.section2 {
+    margin: 0px;
+  }
+  .trackName {
+    padding-bottom: 5px;
+  }
   .aboutFlex {
     margin-top: 50px;
     display: -webkit-box;

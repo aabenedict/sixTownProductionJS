@@ -69,38 +69,47 @@
     <main>
         <section id="music" class="player">
             <div class="border">
-                <ul class="details">
-                    <li class="nowPlaying">PLAYING x OF y</li>
-                    <li class="trackArt"></li>
-                    <li class="trackName">Track Name</li>
-                    <li class="trackArtist">Track Artist</li>
-                </ul>
-                <ul class="sliderContainer">
-                    <li class="currentTime">00:00</li>
-                    <li><input type="range" min="1" max="100" value="0" class="seekSlider" onchange="seekTo()"></li>
-                    <li class="totalDuration">00:00</li>
-                </ul>
-                <ul class="buttonsPlayer">
-                    <li class="randomTrack" onclick="randomTrack()">
-                        <i class="fa-solid fa-shuffle" title="random"></i>
-                    </li>
-                    <li class="prevTrack" onclick="prevTrack()">
-                        <i class="fa-solid fa-backward-step"></i>
-                    </li>
-                    <li class="playPauseTrack" onclick="playPauseTrack()">
-                        <i class="fa-solid fa-circle-play"></i>
-                    </li>
-                    <li class="nextTrack" onclick="nextTrack()">
-                        <i class="fa-solid fa-forward-step"></i>
-                    </li>
-                    <li class="repeatTrack" onclick="repeatTrack()">
-                        <i class="fa-solid fa-repeat" title="repeat"></i>
-                    </li>
-                </ul>
-                <ul class="sliderContainer">
-                    <li><i class="fa-solid fa-volume-low"></i></li>
-                    <li class="volumeSliderBox"><input type="range" min="1" max="100" value="99" class="volumeSlider" onchange="setVolumeTo()"></li>
-                </ul>
+                <div class="divide">
+                    <div class="section1">
+                        <ul class="details">
+                            <li class="nowPlaying">PLAYING x OF y</li>
+                            <li class="trackArt"></li>
+                        </ul>
+                    </div>
+                    <div class="section2">
+                        <ul class="details">
+                            <li class="trackName">Track Name</li>
+                            <li class="trackArtist">Track Artist</li>
+                        </ul>
+                        <ul class="sliderContainer">
+                            <li class="currentTime">00:00</li>
+                            <li class="seekSliderBox"><input type="range" min="1" max="100" value="0" class="seekSlider" onchange="seekTo()"></li>
+                            <li class="totalDuration">00:00</li>
+                        </ul>
+                        <ul class="buttonsPlayer">
+                            <li class="randomTrack" onclick="randomTrack()">
+                                <i class="fa-solid fa-shuffle" title="random"></i>
+                            </li>
+                            <li class="prevTrack" onclick="prevTrack()">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </li>
+                            <li class="playPauseTrack" onclick="playPauseTrack()">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </li>
+                            <li class="nextTrack" onclick="nextTrack()">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </li>
+                            <li class="repeatTrack" onclick="repeatTrack()">
+                                <i class="fa-solid fa-repeat" title="repeat"></i>
+                            </li>
+                        </ul>
+                        <ul class="sliderContainer">
+                            <li><i class="fa-solid fa-volume-low"></i></li>
+                            <li class="volumeSliderBox"><input type="range" min="1" max="100" value="99" class="volumeSlider"
+                                    onchange="setVolumeTo()"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about" class="about">

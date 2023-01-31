@@ -19,6 +19,19 @@
 
 /* all of our styles for TABLET LANDSCAPE devices will go within this breakpoint */
 @media (max-width: 1000px) {
+    .player {
+        height: 95vh;
+    }
+    .divide {
+        @include flex(column, nowrap, center, center)
+    }
+    .section1,
+    .section2 {
+        margin: 0px;
+    }
+    .trackName {
+        padding-bottom: 5px;
+    }
     .aboutFlex {
         margin-top: 50px;
         @include flex(column, nowrap, center, center)

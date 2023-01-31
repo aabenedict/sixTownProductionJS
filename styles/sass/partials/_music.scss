@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 .player {
-    height: 95vh;
+    height: 55vh;
     margin: 100px 0;
     @include flex(column, nowrap, center, center);
 }
@@ -11,8 +11,16 @@
     background-color: lighten($color: $primaryColour, $amount: 83%);
     border: 1px solid transparent;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba($color: $secondaryColour, $alpha: 0.3) 0px 15px 38px, rgba($color: $secondaryColour, $alpha: 0.22) 0px 8px 12px;
+}
+
+.divide {
+    @include flex(row, nowrap, space-between, flex-start)
+}
+
+.section1,.section2 {
+    margin: 0 20px;
 }
 
 .details {
@@ -40,6 +48,7 @@
 
 .trackName {
     font-size: 2.5rem;
+    padding-bottom: 20px;
 }
 
 .trackArtist {
@@ -110,12 +119,17 @@
     width: 100%;
 }
 
+.seekSliderBox {
+    padding-bottom: 8px;
+}
+
 .volumeSlider {
     width: 100%;
 }
 
 .volumeSliderBox {
     width: 30%;
+    padding-bottom: 10px;
 }
 
 .currentTime,
